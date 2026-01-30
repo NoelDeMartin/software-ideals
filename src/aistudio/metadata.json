@@ -1,0 +1,4 @@
+{
+  "name": "Semantic Local-First Todo",
+  "description": "A robust, local-first Todo application using CRDTs and RDF standards. It functions entirely offline with optional self-hosted synchronization."
+}
