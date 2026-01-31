@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Ideals</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+
+<body>
+    <h1>Software Ideals</h1>
+    <p>
+        This is the result of using various Vibe Coding tools to generate a TODO application following my software ideals.
+    </p>
+    <p>
+        For more context, read the original blog post:
+        <a href="https://noeldemartin.com/blog/software-ideals-in-the-age-of-ai" target="_blank">
+            Software Ideals in The Age of AI
+        </a>.
+    </p>
+    <ul>
+        <li><a href="./aistudio/">Google's AI Studio</a></li>
+        <li><a href="./bolt/">Bolt.new</a></li>
+        <li><a href="./lovable/">Lovable.dev</a></li>
+        <li>Vercel's v0 (Cannot be hosted on Github Pages because it uses Next.js 💀)</li>
+    </ul>
+    <p>👉 <a href="https://github.com/noeldemartin/software-ideals" target="_blank">View source code</a></p>
+    <p>Here's the prompt I used:</p>
+    <blockquote>
+        Create a Todo application that is architected as a local-first Progressive Web App. The core philosophy of this
+        app is that it must be fully usable upon visiting, requiring no internet connection and no user account to
+        create and manage tasks. To achieve this, the underlying state management should rely on Conflict-free
+        Replicated Data Types (CRDTs), ensuring that all data is persisted locally in the browser first.
+        <br />
+        <br />
+        Crucially, I want the internal data model to be structured using RDF standards. Instead of storing simple JSON
+        objects, the application should maintain a semantic knowledge graph of the user's tasks.
+        <br />
+        <br />
+        For the synchronization strategy, design the system so that users remain anonymous by default. However, provide
+        a way for users to log in where they can input a URL of a self-hosted backend or sync engine. Once this URL is
+        provided, the local CRDT state should synchronize with that server, allowing the user to back up their data and
+        share their task graph across multiple devices.
+        <br />
+        <br />
+        Other than this configuration, the user interface should only support two actions: adding a new task and
+        toggling its completion status with a checkbox.
+    </blockquote>
+</body>
+
+</html>
